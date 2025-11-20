@@ -29,11 +29,8 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      # IMPORTANT: set base URL for your repo name
       - name: Build
-        run: |
-          echo "VITE_BASE=/portfolio/" >> .env
-          npm run build
+        run: npm run build
 
       - name: Upload production build
         uses: actions/upload-pages-artifact@v3
