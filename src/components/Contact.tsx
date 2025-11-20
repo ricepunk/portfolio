@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Github, Instagram, Linkedin, Mail, Send } from "lucide-react";
+import { Github, Instagram, Mail, Send } from "lucide-react";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -56,7 +56,7 @@ const Contact = () => {
 				>
 					<div className="text-center space-y-4">
 						<h2 className="text-3xl md:text-4xl font-bold">
-							<span className="text-accent">//</span> Get In Touch
+							<span className="text-accent">{"//"}</span> Get In Touch
 						</h2>
 						<p className="text-lg text-muted-foreground max-w-2xl mx-auto">
 							Have a project in mind or want to discuss backend architecture?

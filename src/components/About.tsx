@@ -20,7 +20,7 @@ const About = () => {
 				>
 					<div className="text-center space-y-4">
 						<h2 className="text-3xl md:text-4xl font-bold">
-							<span className="text-accent">//</span> About Me
+							<span className="text-accent">{"//"}</span> About Me
 						</h2>
 						<p className="text-lg text-muted-foreground max-w-3xl mx-auto">
 							I'm a Backend Developer and DevOps Engineer focused on building

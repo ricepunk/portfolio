@@ -1,8 +1,16 @@
 import { motion } from "framer-motion";
 import { Download, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { CV_DOWNLOAD } from "@/constant";
 
 const Hero = () => {
+	const scrollToSection = (href: string) => {
+		const element = document.querySelector(href);
+		if (element) {
+			element.scrollIntoView({ behavior: "smooth" });
+		}
+	};
+
 	return (
 		<section className="min-h-screen flex items-center justify-center relative overflow-hidden px-4">
 			<div className="absolute inset-0 grid-background opacity-20" />
@@ -43,14 +51,17 @@ const Hero = () => {
 						transition={{ duration: 0.6, delay: 0.3 }}
 						className="flex flex-wrap gap-4 justify-center"
 					>
+						<a href={CV_DOWNLOAD} target="_blank" rel="noopener noreferrer">
+							<Button
+								size="lg"
+								className="gap-2 bg-accent hover:bg-accent/90 text-accent-foreground"
+							>
+								<Download className="w-5 h-5" />
+								Download CV
+							</Button>
+						</a>
 						<Button
-							size="lg"
-							className="gap-2 bg-accent hover:bg-accent/90 text-accent-foreground"
-						>
-							<Download className="w-5 h-5" />
-							Download CV
-						</Button>
-						<Button
+							onClick={() => scrollToSection("#contact")}
 							size="lg"
 							variant="outline"
 							className="gap-2 border-border hover:bg-secondary"

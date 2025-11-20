@@ -32,7 +32,7 @@ const Navigation = () => {
 				<div className="flex items-center justify-between h-16">
 					{/* Logo */}
 					<a
-						href="#"
+						href="/"
 						className="font-mono text-xl font-bold flex items-center gap-2"
 					>
 						<span className="text-accent">$</span>
@@ -43,6 +43,7 @@ const Navigation = () => {
 					<div className="hidden md:flex items-center gap-8">
 						{navItems.map((item) => (
 							<button
+								type="button"
 								key={item.label}
 								onClick={() => scrollToSection(item.href)}
 								className="font-mono text-sm text-muted-foreground hover:text-accent transition-colors duration-300"
@@ -54,6 +55,7 @@ const Navigation = () => {
 
 					{/* Mobile Menu Button */}
 					<button
+						type="button"
 						onClick={() => setIsOpen(!isOpen)}
 						className="md:hidden p-2 hover:bg-secondary rounded-lg transition-colors duration-300"
 					>
@@ -72,6 +74,7 @@ const Navigation = () => {
 						<div className="py-4 space-y-2">
 							{navItems.map((item) => (
 								<button
+									type="button"
 									key={item.label}
 									onClick={() => scrollToSection(item.href)}
 									className="block w-full text-left px-4 py-2 font-mono text-sm text-muted-foreground hover:text-accent hover:bg-secondary rounded-lg transition-colors duration-300"
