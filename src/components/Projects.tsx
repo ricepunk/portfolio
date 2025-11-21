@@ -12,24 +12,24 @@ const Projects = () => {
 			github: "#",
 		},
 		{
-			title: "Discord Bot Platform",
+			title: "Discord Bot",
 			description:
 				"Scalable Discord bot infrastructure with microservices architecture, handling 100K+ users with high availability.",
-			technologies: ["Node.js", "PostgreSQL", "RabbitMQ", "Kubernetes"],
-			github: "#",
+			technologies: ["TypeScript", "Node.js", "MongoDB", "Docker", "Redis"],
+			github: "https://github.com/discordjs/discord.js",
 		},
 		{
 			title: "FiveM Server Backend",
 			description:
 				"Custom backend API for FiveM multiplayer servers with player management, economy system, and real-time data sync.",
-			technologies: ["Express", "MongoDB", "Socket.io", "JWT"],
-			github: "#",
+			technologies: ["Lua", "JavaScript", "Node.js", "MariaDB"],
+			github: "https://github.com/citizenfx/fivem",
 		},
 		{
 			title: "Server Monitoring Pipeline",
 			description:
 				"Comprehensive monitoring solution with metrics collection, alerting, and visualization for distributed systems.",
-			technologies: ["Grafana", "ELK Stack", "Telegraf", "Alert Manager"],
+			technologies: ["Grafana", "Loki", "DataDog", "Prometheus"],
 			github: "#",
 		},
 	];
